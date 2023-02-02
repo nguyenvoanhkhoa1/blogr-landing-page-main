@@ -1,0 +1,51 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+
+// custom variables
+
+$enable-negative-margins: true;
+
+$font-family-sans-serif: "Overpass", sans-serif;
+$btn-font-family: "Ubuntu";
+
+$primary: #ff505c;
+
+$light: #fafafa;
+$dark: #24242c;
+
+//import the functions & variables
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+
+$custom-font-sizes: (
+  c1: 64px,
+  c2: 40px,
+  c3: 28px,
+  c4: 20px,
+  c5: 16px,
+  c6: 15px,
+);
+
+$custom-spacers: (
+  c1: $spacer * 0.25,
+  c2: $spacer * 0.5,
+  c3: $spacer * 0.75,
+  c4: $spacer,
+  c5: $spacer * 1.25,
+  c8: $spacer * 2,
+  c10: $spacer * 2.5,
+  c12: $spacer * 3,
+  c16: $spacer * 4,
+  c20: $spacer * 5,
+  c24: $spacer * 6,
+  c28: $spacer * 7,
+  c32: $spacer * 8,
+  c36: $spacer * 9,
+  c48: $spacer * 12,
+);
+
+$font-sizes: map-merge($custom-font-sizes, $font-sizes);
+$spacers: map-merge($custom-spacers, $spacers);
+
+// import boostrap
+@import "../node_modules/bootstrap/scss/bootstrap";
