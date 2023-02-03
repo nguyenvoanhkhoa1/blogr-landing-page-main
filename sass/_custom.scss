@@ -17,35 +17,35 @@ $dark: #24242c;
 @import "../node_modules/bootstrap/scss/functions";
 @import "../node_modules/bootstrap/scss/variables";
 
-$custom-font-sizes: (
-  c1: 64px,
-  c2: 40px,
-  c3: 28px,
-  c4: 20px,
-  c5: 16px,
-  c6: 15px,
+$font-sizes: (
+  1: 64px,
+  2: 40px,
+  3: 28px,
+  4: 20px,
+  5: 16px,
+  6: 15px,
 );
 
-$custom-spacers: (
-  c1: $spacer * 0.25,
-  c2: $spacer * 0.5,
-  c3: $spacer * 0.75,
-  c4: $spacer,
-  c5: $spacer * 1.25,
-  c8: $spacer * 2,
-  c10: $spacer * 2.5,
-  c12: $spacer * 3,
-  c16: $spacer * 4,
-  c20: $spacer * 5,
-  c24: $spacer * 6,
-  c28: $spacer * 7,
-  c32: $spacer * 8,
-  c36: $spacer * 9,
-  c48: $spacer * 12,
+$spacers: (
+  1: $spacer * 0.25,
+  2: $spacer * 0.5,
+  3: $spacer * 0.75,
+  4: $spacer,
+  5: $spacer * 1.25,
+  8: $spacer * 2,
+  10: $spacer * 2.5,
+  12: $spacer * 3,
+  16: $spacer * 4,
+  20: $spacer * 5,
+  24: $spacer * 6,
+  28: $spacer * 7,
+  32: $spacer * 8,
+  36: $spacer * 9,
+  48: $spacer * 12,
 );
 
-$font-sizes: map-merge($custom-font-sizes, $font-sizes);
-$spacers: map-merge($custom-spacers, $spacers);
+// $font-sizes: map-merge($custom-font-sizes, $font-sizes);
+// $spacers: map-merge($custom-spacers, $spacers);
 
 // import boostrap
 @import "../node_modules/bootstrap/scss/bootstrap";
